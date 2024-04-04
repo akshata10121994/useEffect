@@ -1,0 +1,14 @@
+useState hook
+-you can use hooks only inside the function components,not inside the classs components
+-you cannot put hooks inside any if statements,conditional statements,functions,loops,or any nested functions
+-when we pass default value in useState, this value gonna render everytime we make changes in components,and if
+we are doing any complex calculations in default state ,then as it renders everytime so it will affect the 
+performance,hence to avoid this we pass function version of passing value,()=>{} like this
+
+useEffect hook
+-everything inside useEffect gonna run everytime we render our component,if we change any state on any click then
+this inside useEffect gonna run
+-but if we want to run useEffect only on specific resource change then we pass second parameter ie an array to 
+useEffect, in this array if we pass any state variable ,so on change of this variable only then useEffect gona run
+-if we pass empty array,then useEffect gonna run only once on mount ie for the very first time of webpage load
+-
